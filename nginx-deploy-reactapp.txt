@@ -4,8 +4,8 @@
 
 server {
    listen 80;
-   server_name findme.hopto.org;
-   root /home/app/find-me/reactjs-findme/build;
+   server_name findme.hopto.org; # change your domain name
+   root /home/app/find-me/reactjs-findme/build; # change your location to point to builded react file
    index index.html index.htm;
    location / {
             if (!-e $request_filename){
@@ -22,10 +22,10 @@ server {
         listen 80;
         listen [::]:80;
 
-        root /home/ubuntu/app/find-me/reactjs-findme/build;
+        root /home/ubuntu/app/find-me/reactjs-findme/build; # change your location to point to builded react file
         index index.html index.htm index.nginx-debian.html;
 
-        server_name findme.hopto.org;
+        server_name findme.hopto.org; # change your domain name
 
         location / {
                 if (!-e $request_filename){
